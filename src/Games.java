@@ -32,11 +32,12 @@ public class Games {
                     board.getcell((x - 1) * 3 + y - 1).changeO();
                 }
             }
+            board.printBoard();
             if (board.have_winner()) {
                 System.out.println("Exit!");
                 break;
             }
-            board.printBoard();
+
             turn = 1 - turn;
             cnt++;
 
